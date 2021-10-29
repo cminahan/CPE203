@@ -1,0 +1,20 @@
+public class Rectangle {
+
+    private final Point top_left;
+    private final Point bottom_right;
+
+    public Rectangle(Point top_left, Point bottom_right){
+        this.top_left = top_left;
+        this.bottom_right = bottom_right;
+    }
+
+    public Point getTopLeft() { return top_left; }
+
+    public Point getBottomRight() { return bottom_right; }
+
+    public double perimeter(){
+        double width = Math.abs((this.getTopLeft().getX()) - (this.getBottomRight().getX()));
+        double height = Math.abs((this.getTopLeft().getY()) - (this.getBottomRight().getY()));
+        return (2*width + 2*height);
+    }
+}
