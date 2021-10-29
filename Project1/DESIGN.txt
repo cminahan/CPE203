@@ -1,0 +1,234 @@
+Project 1 - Design Document
+Author: Claire Minahan
+
+- getCurrentImage(Object entity){}
+   I left this method in the Functions class because it calls to no specific class so leaving it in the Functions class makes the most sense
+
+- executeAction(Action action, EventScheduler scheduler){}
+   I found this method could be placed in both the Action class as well as the EventScheduler class. I placed it in the Action class because 
+   alothough this class relies on other classes, it does not rely on the EventScheduler class. Additionally, the functions of this method seem
+   to fit the Action class more appropriately. 
+
+- executeAnimationAction(Action action, EventScheduler scheduler){}
+   I found this method could be placed in both the Action class as well as the EventScheduler class. I placed it in the Action class because 
+   alothough this class relies on other classes, it does not rely on the EventScheduler class. Additionally, the functions of this method seem
+   to fit the Action class more appropriately.
+
+- executeActivityAction(Action action, EventScheduler scheduler){}
+   I found this method could be placed in both the Action class as well as the EventScheduler class. I placed it in the Action class because 
+   alothough this class relies on other classes, it does not rely on the EventScheduler class. Additionally, the functions of this method seem
+   to fit the Action class more appropriately.
+
+- executeOctoFullActivity(Entity entty, WorldModel world, ImageStore imageStore, EventScheduler scheduler){}
+   I found this method could be placed in either the Entity, WorldModel, ImageStore, or EventScheduler class. I placed it in the Entity class because 
+   although it relies on other classes, it doens't rely on any of the classes that are in the parameter for this method. I was mostly debating between 
+   this and the EventScheduler class because the EventScheduler class relies on no other classes. The deciding factor for me was the description of both
+   classes. EventScheduler is decribed for controlling what happens, however Entity is for the individual entities, or items, in the world, which fits this
+   particular method the best.
+
+- executeOctoNotFullActivity(Entity entity, WorldModel world, ImageStore imageStore, EvenScheduler scheduler){}
+   I found this method could be placed in either the Entity, WorldModel, ImageStore, or EventScheduler class. I placed it in the Entity class because 
+   although it relies on other classes, it doens't rely on any of the classes that are in the parameter for this method. I was mostly debating between 
+   this and the EventScheduler class because the EventScheduler class relies on no other classes. The deciding factor for me was the description of both
+   classes. EventScheduler is decribed for controlling what happens, however Entity is for the individual entities, or items, in the world, which fits this
+   particular method the best.
+
+- executeFishActivity(Entity entity, WorldModel world, ImageStore imageStore, EvenScheduler scheduler){}
+   I found this method could be placed in either the Entity, WorldModel, ImageStore, or EventScheduler class. I placed it in the Entity class because 
+   although it relies on other classes, it doens't rely on any of the classes that are in the parameter for this method. I was mostly debating between 
+   this and the EventScheduler class because the EventScheduler class relies on no other classes. The deciding factor for me was the description of both
+   classes. EventScheduler is decribed for controlling what happens, however Entity is for the individual entities, or items, in the world, which fits this
+   particular method the best.
+
+- executeCrabActivity(Entity entity, WorldModel world, ImageStore imageStore, EvenScheduler scheduler){}
+   I found this method could be placed in either the Entity, WorldModel, ImageStore, or EventScheduler class. I placed it in the Entity class because 
+   although it relies on other classes, it doens't rely on any of the classes that are in the parameter for this method. I was mostly debating between 
+   this and the EventScheduler class because the EventScheduler class relies on no other classes. The deciding factor for me was the description of both
+   classes. EventScheduler is decribed for controlling what happens, however Entity is for the individual entities, or items, in the world, which fits this
+   particular method the best.
+
+- executeQuakeActivity(Entity entity, WorldModel world, ImageStore imageStore, EvenScheduler scheduler){}
+   I found this method could be placed in either the Entity, WorldModel, ImageStore, or EventScheduler class. I placed it in the Entity class because 
+   although it relies on other classes, it doens't rely on any of the classes that are in the parameter for this method. I was mostly debating between 
+   this and the EventScheduler class because the EventScheduler class relies on no other classes. The deciding factor for me was the description of both
+   classes. EventScheduler is decribed for controlling what happens, however Entity is for the individual entities, or items, in the world, which fits this
+   particular method the best.
+
+- executeAtlantisAcitvity(Entity entity, WorldModel world, ImageStore imageStore, EvenScheduler scheduler){}
+   I found this method could be placed in either the Entity, WorldModel, ImageStore, or EventScheduler class. I placed it in the Entity class because 
+   although it relies on other classes, it doens't rely on any of the classes that are in the parameter for this method. I was mostly debating between 
+   this and the EventScheduler class because the EventScheduler class relies on no other classes. The deciding factor for me was the description of both
+   classes. EventScheduler is decribed for controlling what happens, however Entity is for the individual entities, or items, in the world, which fits this
+   particular method the best.
+
+- executeSgrassActivity(Entity entity, WorldModel world, ImageStore imageStore, EvenScheduler scheduler){}
+   I found this method could be placed in either the Entity, WorldModel, ImageStore, or EventScheduler class. I placed it in the Entity class because 
+   although it relies on other classes, it doens't rely on any of the classes that are in the parameter for this method. I was mostly debating between 
+   this and the EventScheduler class because the EventScheduler class relies on no other classes. The deciding factor for me was the description of both
+   classes. EventScheduler is decribed for controlling what happens, however Entity is for the individual entities, or items, in the world, which fits this
+   particular method the best.
+
+- scheduleActions(Entity entity, EventScheduler scheduler, WorldModel world, ImageStore imageStore){}
+   I found this method could be placed either the Entity, EventScheduler, WorldModel, or ImageStore class. I placed it in the EventScheduler class for 
+   multiple reasons. One reason is that it doens't rely on any other classes. The other is due to the description of the EventScheduler class is to controll
+   what happens in the world and looking at this method, it seems to be for doing just that.
+
+- transformNotFull(Entity entity, WorldModel world, EventScheduler scheduler, ImageStore store){}
+   I found this method could be placed either the Entity, EventScheduler, WorldModel, or ImageStore class. I placed it in the WorldModel class. Although 
+   this class relies on multiple classes, the description for this class is to keep track of what is in the world in terms of entities which is what this
+   method appears to do, keep track of entities. 
+
+- transformFull(Entity entity, WorldModel world, ImageStore imageStore, EvenScheduler scheduler){}
+   I found this method could be placed in either the Entity, WorldModel, ImageStore, or EventScheduler class. I placed it in the Entity class because 
+   although it relies on other classes, it doens't rely on any of the classes that are in the parameter for this method. I was mostly debating between 
+   this and the EventScheduler class because the EventScheduler class relies on no other classes. The deciding factor for me was the description of both
+   classes. EventScheduler is decribed for controlling what happens, however Entity is for the individual entities, or items, in the world, which fits this
+   particular method the best.
+
+- moveToNotFull(Entity octo, WorldModel world, Entity target, EventScheduler scheduler){}
+   I found this method could be placed in either the Entity, WorldModel, or EventScheduler class. I placed it in the WorldModel class for multiple
+   reasons. One being that this class doesn't rely on many other classes. I was mostly debating between this class and the EventScheduler class however 
+   because thismethod has two Entity objects, and has boolean return, I decided to go with the WorldModel class. 
+
+- moveToFull(Entity octo, WorldModel world, Entity target, EventScheduler scheduler){}
+   I found this method could be placed in either the Entity, WorldModel, or EventScheduler class. I placed it in the WorldModel class for multiple
+   reasons. One being that this class doesn't rely on many other classes. I was mostly debating between this class and the EventScheduler class however 
+   because thismethod has two Entity objects, and has boolean return, I decided to go with the WorldModel class.  
+
+- moveToCrab(Entity crab, WorldModel worl, Entity target, EventScheduler scheduler){}
+   I found this method could be placed in either the Entity, WorldModel, or EventScheduler class. I placed it in the WorldModel class for multiple
+   reasons. One being that this class doesn't rely on many other classes. I was mostly debating between this class and the EventScheduler class however 
+   because thismethod has two Entity objects, and has boolean return, I decided to go with the WorldModel class.
+
+- nextPostionOcto(Entity entity, WorldModel world, Point destPos){}
+   I found this method could be placed in either the Entity, WorldModel, or Pointclass. I placed it in the Entity class for multiple reasons. One being
+   that this class doens't rely on many other classes and also the description for this particular class best matches with what this method does. 
+
+- nextPostionCrab(Entity entity, WorldModel world, Point destPos){}
+   I found this method could be placed in either the Entity, WorldModel, or Pointclass. I placed it in the Entity class for multiple reasons. One being
+   that this class doens't rely on many other classes and also the description for this particular class best matches with what this method does.
+
+- Optional<Point> findOpenAround(WorldModel world, Point pos){}
+   I found this method could be placed in either the WorldModel or the Point class. I placed it in the Entity class becuase one description of this class
+   is keeping track of entities and items in the world, which is what I believe this method does. 
+
+- scheduleEvent(EventScheduler scheduler, Entity entity, Action action, long afterPeriod){}
+   I found this method could be placed in either the EventScheduler, Entity, or Action class. I placed it in the EventScheduler class because it doens't
+   rely on any other classes and it fits the description for what this method does. 
+
+- unscheduleAllEvents(EventScheduler scheduler, Entity Entity){}
+   I found this method could be placed in either the EventScheduler or Entity. I placed it in the EventScheduler class because it doens't
+   rely on any other classes and it fits the description for what this method does. 
+
+- removePendingEvent(EventScheduler scheduler, Event event){}
+   I found this method could be placed in both the EventScheduler class as well as the Event class beacuse I feel it doesn't fit well in the description
+   of the EventScheduler class. 
+
+- processImageLine(Map<String, List<PImage>> images, String line, PApplet screen){}
+   I left this method in the Functions class because none of it's parameters are any of the classes so I decided it would be best left where it is.
+
+- getImages(Map<String, List<PImage>> images, String key){}
+   I left this method in the Functions class because none of it's parameters are any of the classes so I decided it would be best left where it is.
+
+- setAlpha(PImage img, int maskColor, int alpha){}
+   I left this method in the Functions class because none of it's parameters are any of the classes so I decided it would be best left where it is.
+
+- contains(Viewport viewport, Point p){}
+   I found that this method could be palced in both the Viewport and the Point class. I placed it in the Viewport class because it seems like this
+   method fits the description of the Viewport class. 
+
+- load(Scanner in, WorldModel world, ImageStore imagestore){}
+   I found that this method could be placed in both WorldModel and the ImageStore class. I placed it in the WorldModel class becuase the function of it
+   matched best with the ImageStore in terms of keeping track of what's in the world.
+
+- processLine(String line, WorldModel world, ImageStore imageStore){}
+   I found that this method could be placed in both WorldModel and the ImageStore class. I placed it in the WorldModel class becuase the function of it
+   matched best with the ImageStore in terms of keeping track of what's in the world. 
+
+- parseBackground(String [] properties, WorldModel world, ImageStore imageStore){}
+   I found that this method could be placed in both WorldModel and the class. I placed it in the ImageStore class becuase the function of it
+   matched best with the ImageStore in terms of keeping track of what's in the world.
+
+- parseOcto(String [] properties, WorldModel world, ImageStore imageStore){}
+   I found that this method could be placed in both WorldModel and the class. I placed it in the ImageStore class becuase the function of it
+   matched best with the ImageStore in terms of keeping track of what's in the world.
+
+- parseObstacle(String [] properties, WorldModel world, ImageStore imageStore){}
+   I found that this method could be placed in both WorldModel and the class. I placed it in the ImageStore class becuase the function of it
+   matched best with the ImageStore in terms of keeping track of what's in the world.
+
+- parseFish(String [] properties, WorldModel world, ImageStore imageStore){}
+   I found that this method could be placed in both WorldModel and the class. I placed it in the ImageStore class becuase the function of it
+   matched best with the ImageStore in terms of keeping track of what's in the world.
+
+- parseAtlantis(String [] properties, WorldModel world, ImageStore imageStore){}
+   I found that this method could be placed in both WorldModel and the class. I placed it in the ImageStore class becuase the function of it
+   matched best with the ImageStore in terms of keeping track of what's in the world.
+
+- parseSgrass(String [] properties, WorldModel world, ImageStore imageStore){}
+   I found that this method could be placed in both WorldModel and the class. I placed it in the ImageStore class becuase the function of it
+   matched best with the ImageStore in terms of keeping track of what's in the world.
+
+- tryAddEntity(WorldModel world, Entity entity){}
+   I found that this method could be placed in either the ModelWorld class or the Entity class. I placed it in the Entity class becasue
+   it seems to match the description of this class more over the World Model class. 
+
+- withinBounds(WorldModel world, Point pos){}
+   I found that this method could be placed in either the ModelWorld class or the Point class. I placed it in the WorldModel class because it
+   fits more with keeping track of what is in the world, whereas Point doens't really have a defining purpose. 
+
+- isOccupied(WorldModel world, Point pos){}
+   I found that this method could be placed in either the ModelWorld class or the Point class. I placed it in the WorldModel class because it
+   fits more with keeping track of what is in the world, whereas Point doens't really have a defining purpose. 
+
+- findNearest(WorldModel world, Point pos, EntityKind, kind){}
+   I found that this method could be placed in either the ModelWorld class or the Point class. I placed it in the ModelWorld class because it
+   fits mroe with keeping track of what is the in the world. 
+
+- addEntity(WorldModel world, Entity entity){}
+   I found that this method could be placed in either the ModelWorld class or the Entity class. I placed it in the Entity class because it deals
+   more with the individual entities rather than the other compoenents of the world.
+
+- moveEntity(WorldModel world, Entity entity, Point pos){}
+   I found that this method could be placed in either the ModelWorld class, Point, or the Entity class. I placed it in the Entity class because it deals
+   more with the individual entities rather than the other compoenents of the world.
+
+- removeEntity(WorldModel world, Entity entity){}
+   I found that this method could be placed in either the ModelWorld class or the Entity class. I placed it in the Entity class because it deals
+   more with the individual entities rather than the other compoenents of the world.
+
+- removeEntityAt(WorldModel world, Point pos){}
+   I found that this method could be placed in either the ModelWorld class or the Point class. I placed it in the WorldModel class because it
+   fits more with keeping track of what is in the world, whereas Point doens't really have a defining purpose. 
+
+- getBackgroundImage(WorldModel world, Point pos){}
+   I found that this method could be placed in either the ModelWorld class or the Point class. I placed it in the WorldModel class because it
+   fits more with keeping track of what is in the world, whereas Point doens't really have a defining purpose. 
+
+- setBackground(ModelWorld world, Point pos, Background background){}
+   I found that this method could be placed in either the ModelWorld class, the Point class, or the Backgound class. I placed it in the Background
+   class because it deals with setting the background.
+
+- getOccupant(WorldModel world, Point pos){}
+   I found that this method could be placed in either the ModelWorld class or the Point class. I placed it in the WorldModel class because it
+   fits more with keeping track of what is in the world, whereas Point doens't really have a defining purpose.
+
+- getOccupancyCell(WorldModel world, Point pos){}
+   I found that this method could be placed in either the ModelWorld class or the Point class. I placed it in the WorldModel class because it
+   fits more with keeping track of what is in the world, whereas Point doens't really have a defining purpose.
+
+- getBackgroundCell(WorldModel world, Point pos){}
+   I found that this method could be placed in either the ModelWorld class or the Point class. I placed it in the WorldModel class because it
+   fits more with keeping track of what is in the world, whereas Point doens't really have a defining purpose.
+
+- setBackgroundCell(WorldModel world, Point pos){}
+   I found that this method could be placed in either the ModelWorld class or the Point class. I placed it in the WorldModel class because it
+   fits more with keeping track of what is in the world, whereas Point doens't really have a defining purpose.
+
+- clamp(int value, int low, int high){}
+   I left this method in the Functions class becuase it doesn't have any of the class objects in its parameter
+
+- createActivityAction(Entity entity, WorldModel world, ImageStore imageStore){}
+   I found that this method could be placed in either the Entity, ModelWorld, or ImageStore class. I placed it in the Entity class becuase it 
+   pertains to the individual action for an entity. 
+
